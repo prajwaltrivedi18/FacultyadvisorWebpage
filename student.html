@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Signup Page</title>
+  <style>
+    body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        animation: gradient 5s ease infinite;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+  }@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .login-box, .signup-box {
+    background-color: white;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-box {
+    width: 300px;
+  }
+  
+  .signup-box {
+    width: 300px;
+  }
+  
+  .textbox {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .textbox input {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form action="studentl.php" method="POST">
+        <div class="textbox">
+          <input type="text" placeholder="Your USN" name="usn" required>
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Your Password" name="pwd" required>
+        </div>
+        <input type="submit" class="btn" value="Login">
+      </form>
+    </div>
+    <div class="signup-box">
+      <h2>Sign Up</h2>
+      <form action="studentr.php" method="POST">
+        <div class="textbox">
+          <input type="text" placeholder="Your USN" name="usn" required>
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Your Password" name="pwd" required>
+        </div>  <div class="textbox">
+            <input type="password" placeholder="Confirm Password" name="cpwd" required>
+          </div>
+        <input type="submit" class="btn" value="Sign Up">
+      </form>
+    </div>
+  </div>
+</body>
+</html> 
+
+

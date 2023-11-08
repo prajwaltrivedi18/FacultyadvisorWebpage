@@ -1,0 +1,56 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+
+.welcom{
+color: azure;
+}
+
+
+
+
+#button1:hover{
+transform: scale(1.1);
+transition: 0.5s;
+}
+
+
+#button1{
+    margin-right: 30px;
+    }
+    #button1{
+    margin-right: 30px;
+    transition: 0.5s;
+    }
+
+#button1:hover{
+    margin-bottom: 30px;
+    transition: 0.5s;
+    }
+
+#button2:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+        }
+        
+    #button2:hover{
+            margin-bottom: 30px;
+            transition: 0.5s;
+            }
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
